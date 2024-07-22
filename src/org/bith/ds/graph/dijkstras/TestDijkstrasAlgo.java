@@ -1,8 +1,6 @@
 package org.bith.ds.graph.dijkstras;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class TestDijkstrasAlgo {
     public static void main(String[] args) {
