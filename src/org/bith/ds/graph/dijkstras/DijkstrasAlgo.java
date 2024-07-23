@@ -4,7 +4,7 @@ import java.util.*;
 
 public class DijkstrasAlgo {
 
-    private static final int INFINITY = Integer.MAX_VALUEl
+    private static final int INFINITY = Integer.MAX_VALUE;
 
     public int[][] shortestPathFromSource(Graph g, int source) {
         final int numVertices = g.getNumVertices();
