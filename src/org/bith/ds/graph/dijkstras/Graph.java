@@ -24,6 +24,9 @@ public class Graph {
     }
 
     public void addEdge(int src, int dest, Integer cost) {
+        if (src >= numVertices || dest >= numVertices) {
+            //throw new Exception("vertice id out of the max number");
+        }
         adjacencyList.get(src).add(dest);
         adjacencyList.get(dest).add(src);
         costMap.put(List.of(src, dest), cost);

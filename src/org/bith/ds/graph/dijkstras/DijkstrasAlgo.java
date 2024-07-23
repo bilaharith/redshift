@@ -4,12 +4,14 @@ import java.util.*;
 
 public class DijkstrasAlgo {
 
+    private static final int INFINITY = Integer.MAX_VALUEl
+
     public int[][] shortestPathFromSource(Graph g, int source) {
         final int numVertices = g.getNumVertices();
         Set<Integer> visitedNodes = new HashSet<>();
         int[] costFromSrc = new int[numVertices];
         int[] prevNode = new int[numVertices];
-        Arrays.fill(costFromSrc, Integer.MAX_VALUE);
+        Arrays.fill(costFromSrc, INFINITY);
         visitedNodes.add(source);
         costFromSrc[source] = 0;
         prevNode[source] = -1;
